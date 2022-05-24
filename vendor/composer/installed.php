@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => 'c2680021dc2c6ec9e1b80903605935467b417acc',
+    'reference' => '08dfa2942ad2bf7c3613d589b4b3777120b0efa3',
     'name' => 'src/astratic-blocks',
   ),
   'versions' => 
@@ -106,15 +106,6 @@
         0 => '*',
       ),
     ),
-    'squizlabs/php_codesniffer' => 
-    array (
-      'pretty_version' => '2.9.2',
-      'version' => '2.9.2.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '2acf168de78487db620ab4bc524135a13cfe6745',
-    ),
     'src/astratic-blocks' => 
     array (
       'pretty_version' => 'dev-develop',
@@ -122,7 +113,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => 'c2680021dc2c6ec9e1b80903605935467b417acc',
+      'reference' => '08dfa2942ad2bf7c3613d589b4b3777120b0efa3',
     ),
     'symfony/polyfill-mbstring' => 
     array (

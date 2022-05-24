@@ -1,12 +1,12 @@
 <?php
 
 /**
- * Plugin Name: Astratic
+ * Plugin Name: Astratic Blocks
  * Description: Plugin for implement custom Gutenberg blocks
  * Version: 1.0.0
  * Author: wpserved
  * Author URI: https://wpserved.com/
- * Text Domain: astratic
+ * Text Domain: astratic-blocks
  * Domain Path: /resources/lang
  * Requires at least: 5.9
  * Requires PHP: 8.0

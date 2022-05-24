@@ -1,4 +1,4 @@
-=== Astratic ===
+=== Astratic Blocks ===
 Contributors: wpserved
 Donate link: https://wpserved.com/
 Tags: astratic, blocks, patterns, Gutenberg
@@ -15,13 +15,13 @@ Add special custom blocks and patterns to the Gutenberg.
 
 Simple plugin enabling custom blocks and patterns to the Gutenberg editor. This plugin is preferred by the [Astratic Theme](https://astratic.com).
 
-You can find full plugin description [here](https://wpserved.com/plugins/astratic).
+You can find full plugin description [here](https://wpserved.com/plugins/astratic-blocks).
 
 == Source files ==
 
-You can find plugin's source files on our GitHub repo [page](https://github.com/wpserved/astratic).
+You can find plugin's source files on our GitHub repo [page](https://github.com/wpserved/astratic-blocks).
 
 == Changelog ==
 
 = 1.0.0 =
-* Working version of Astratic plugin
+* Working version of Astratic Blocks plugin
