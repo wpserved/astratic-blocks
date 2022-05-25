@@ -2,16 +2,17 @@
   "name": "src/astratic-blocks",
   "type": "wordpress-plugin",
   "license": "GPL2",
-  "description": "Coditive Plugin",
+  "description": "Astratic Blocks Plugin",
   "homepage": "https://wpserved.com/",
   "authors": [
     {
-      "name": "Coditive",
+      "name": "wpserved",
       "email": "dev@wpserved.com",
       "homepage": "https://wpserved.com/"
     }
   ],
   "keywords": [
+    "astratic",
     "wordpress"
   ],
   "autoload": {

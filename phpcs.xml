@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<ruleset name="Coditive">
-  <description>Coditive Coding Standards</description>
+<ruleset name="wpserved">
+  <description>wpserved Coding Standards</description>
 
   <!-- Scan these files -->
   <file>resources/views</file>
