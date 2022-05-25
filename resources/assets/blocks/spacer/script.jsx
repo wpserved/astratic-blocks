@@ -1,15 +1,9 @@
-/**
- * WordPress dependencies
- */
 const { __ } = wp.i18n;
 const { registerBlockType } = wp.blocks
 
-/**
- * Internal dependencies
- */
-import edit from './edit';
-import icon from './icon';
-import save from './save';
+import edit from './scripts/edit';
+import icon from './scripts/icon';
+import save from './scripts/save';
 
 registerBlockType('astratic/spacer', {
   title: __('Astratic: Responsive Spacer', 'astratic'),

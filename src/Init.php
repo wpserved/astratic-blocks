@@ -13,7 +13,7 @@ class Init extends Singleton
   public function __construct()
   {
     $this->addPrivate('Core\Config');
-    $this->addPrivate('Gutenberg\BlocksProvider');
+    $this->addPrivate('Blocks\Blocks');
   }
 
   private function addPublic(string $name, string $label = ''): void

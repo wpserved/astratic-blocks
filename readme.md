@@ -6,7 +6,7 @@ You can find full plugin description [here](https://wpserved.com/plugins/astrati
 
 ## Requirements
 * WordPress >= 5.9
-* PHP >= 8.0
+* PHP >= 7.4
 
 ## Installation
 Automatic install from WordPress Dashboard
