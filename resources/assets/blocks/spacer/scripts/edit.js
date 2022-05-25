@@ -18,17 +18,17 @@ const SpacerEdit = ({ attributes, isSelected, setAttributes, toggleSelection, in
   const [ inputHeightValue, setInputHeightValue ] = useState( height );
   const breakpointsList = [
     {
-      label: __('Height in pixels for mobile devices', 'astratic'),
+      label: __('Height in pixels for mobile devices', 'astratic-blocks'),
       slug: 'heightMobile',
       heightMobile
     },
     {
-      label: __('Height in pixels for tablet devices', 'astratic'),
+      label: __('Height in pixels for tablet devices', 'astratic-blocks'),
       slug: 'heightTablet',
       heightTablet
     },
     {
-      label: __('Height in pixels for horizontal tablet devices', 'astratic'),
+      label: __('Height in pixels for horizontal tablet devices', 'astratic-blocks'),
       slug: 'heightHorizontalTablet',
       heightHorizontalTablet
     }
@@ -146,7 +146,7 @@ const SpacerEdit = ({ attributes, isSelected, setAttributes, toggleSelection, in
 						/>
 					</BaseControl>
 				</PanelBody>
-        <PanelBody title={ __('Responsive Settings', 'astratic') } initialOpen={ false }>
+        <PanelBody title={ __('Responsive Settings', 'astratic-blocks') } initialOpen={ false }>
           { breakpointsList.map(renderHeightControls) }
         </PanelBody>
 			</InspectorControls>

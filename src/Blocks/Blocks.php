@@ -6,8 +6,11 @@ use AstraticBlocks\Blocks\Spacer;
 
 class Blocks
 {
+  private array $blocks = [];
+
   public function __construct()
   {
-    new Spacer();
+    $this->blocks['base'] = new Base();
+    $this->blocks['spacer'] = new Spacer();
   }
 }

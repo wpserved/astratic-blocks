@@ -57,7 +57,9 @@ abstract class BaseBlock implements Block
                   break;
 
               case 'scripts':
-                wp_enqueue_script("astratic/{$this->getSlug()}/$key", $data[$key], ['wp-blocks', 'wp-element', 'wp-block-editor', 'wp-compose', 'wp-components', 'wp-i18n'], $version);
+                wp_enqueue_script("astratic/{$this->getSlug()}/$key", $data[$key], [
+                  'wp-blocks', 'wp-element', 'wp-block-editor', 'wp-compose', 'wp-components', 'wp-i18n'
+                ], $version);
                   break;
             }
           }

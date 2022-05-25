@@ -24,7 +24,7 @@
     "build": "npm run rmdist && npm run rmbuild && npm run production && npm run production -- --env.mixfile=webpack.build.mix.js && node webpack.build.clean.mix.js",
     "rmdist": "rimraf dist",
     "rmbuild": "rimraf build",
-    "translate:pot": "wp i18n make-pot . ./resources/lang/wps.pot --ignore-domain --include=\"app,resources,wps\" --exclude=\"build\"",
+    "translate:pot": "wp i18n make-pot . ./resources/lang/astratic-blocks.pot --ignore-domain --include=\"app,resources,wps\" --exclude=\"build\"",
     "translate:js": "wp i18n make-json ./resources/lang --pretty-print"
   },
   "engines": {

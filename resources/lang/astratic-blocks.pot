@@ -1,0 +1,70 @@
+# Copyright (C) 2022 wpserved
+# This file is distributed under the same license as the Astratic Blocks plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Astratic Blocks 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/astratic-blocks\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2022-05-25T13:18:51+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.6.0\n"
+
+#. Plugin Name of the plugin
+msgid "Astratic Blocks"
+msgstr ""
+
+#. Description of the plugin
+msgid "Plugin for implement custom Gutenberg blocks"
+msgstr ""
+
+#. Author of the plugin
+msgid "wpserved"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://wpserved.com/"
+msgstr ""
+
+#: resources/assets/blocks/base/script.jsx:7
+msgid "Astratic: Base"
+msgstr ""
+
+#: resources/assets/blocks/base/script.jsx:8
+msgid "Base block."
+msgstr ""
+
+#: resources/assets/blocks/spacer/script.jsx:9
+msgid "Astratic: Responsive Spacer"
+msgstr ""
+
+#: resources/assets/blocks/spacer/script.jsx:10
+msgid "Add white space between blocks and customize its height."
+msgstr ""
+
+#: resources/assets/blocks/spacer/scripts/edit.js:21
+msgid "Height in pixels for mobile devices"
+msgstr ""
+
+#: resources/assets/blocks/spacer/scripts/edit.js:26
+msgid "Height in pixels for tablet devices"
+msgstr ""
+
+#: resources/assets/blocks/spacer/scripts/edit.js:31
+msgid "Height in pixels for horizontal tablet devices"
+msgstr ""
+
+#: resources/assets/blocks/spacer/scripts/edit.js:137
+msgid "Spacer Settings"
+msgstr ""
+
+#: resources/assets/blocks/spacer/scripts/edit.js:138
+msgid "Height in pixels"
+msgstr ""
+
+#: resources/assets/blocks/spacer/scripts/edit.js:149
+msgid "Responsive Settings"
+msgstr ""

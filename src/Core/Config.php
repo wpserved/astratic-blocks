@@ -25,9 +25,9 @@ class Config
     wp_enqueue_script('astratic-blocks/vendor.js', ASBL_ASSETS_URI . '/scripts/vendor.js', ['astratic-blocks/manifest.js'], $version, true);
     wp_enqueue_script('astratic-blocks/front.js', ASBL_ASSETS_URI . '/scripts/front.js', ['astratic-blocks/manifest.js'], $version, true);
 
-    // wp_localize_script('astratic-blocks/front.js', 'astratic-blocks', [
-    //   'ajax' => admin_url('admin-ajax.php')
-    // ]);
+    wp_localize_script('astratic-blocks/front.js', 'asbl', [
+      'ajax' => admin_url('admin-ajax.php')
+    ]);
   }
 
   public function addAdminDependencies(): void
@@ -39,8 +39,8 @@ class Config
     wp_enqueue_script('astratic-blocks/vendor.js', ASBL_ASSETS_URI . '/scripts/vendor.js', ['astratic-blocks/manifest.js'], $version, true);
     wp_enqueue_script('astratic-blocks/admin.js', ASBL_ASSETS_URI . '/scripts/admin.js', ['astratic-blocks/manifest.js'], $version, true);
 
-    // wp_localize_script('astratic-blocks/admin.js', 'astratic-blocks', [
-    //   'ajax' => admin_url('admin-ajax.php')
-    // ]);
+    wp_localize_script('astratic-blocks/admin.js', 'asbl', [
+      'ajax' => admin_url('admin-ajax.php')
+    ]);
   }
 }

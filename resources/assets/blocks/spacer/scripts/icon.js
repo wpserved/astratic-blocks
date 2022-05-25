@@ -1,6 +1,3 @@
-/**
- * WordPress dependencies
- */
 const { G, Path, SVG } = wp.components;
 
 export default (

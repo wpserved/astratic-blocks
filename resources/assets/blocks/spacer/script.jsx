@@ -6,8 +6,8 @@ import icon from './scripts/icon';
 import save from './scripts/save';
 
 registerBlockType('astratic/spacer', {
-  title: __('Astratic: Responsive Spacer', 'astratic'),
-  description: __('Add white space between blocks and customize its height.', 'astratic'),
+  title: __('Astratic: Responsive Spacer', 'astratic-blocks'),
+  description: __('Add white space between blocks and customize its height.', 'astratic-blocks'),
   category: 'layout',
   supports: {
     anchor: true,
