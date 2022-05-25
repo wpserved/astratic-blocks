@@ -8,23 +8,23 @@ class Spacer extends BlockAbstract
   {
     wp_register_script(
         'astratic/block-spacer',
-        ACB_ASSETS_URI . '/blocks/spacer/index.js',
+        ASBL_ASSETS_URI . '/blocks/spacer/index.js',
         ['wp-blocks', 'wp-element', 'wp-block-editor', 'wp-compose', 'wp-components', 'wp-i18n'],
-        filemtime(ACB_ASSETS_PATH . '/blocks/spacer/index.js')
+        filemtime(ASBL_ASSETS_PATH . '/blocks/spacer/index.js')
     );
 
     wp_register_style(
         'astratic/block-spacer-editor',
-        ACB_ASSETS_URI . '/blocks/spacer/editor.css',
+        ASBL_ASSETS_URI . '/blocks/spacer/editor.css',
         ['wp-edit-blocks'],
-        filemtime(ACB_ASSETS_PATH . '/blocks/spacer/editor.css')
+        filemtime(ASBL_ASSETS_PATH . '/blocks/spacer/editor.css')
     );
 
     wp_register_style(
         'astratic/block-spacer',
-        ACB_ASSETS_URI . '/blocks/spacer/style.css',
+        ASBL_ASSETS_URI . '/blocks/spacer/style.css',
         [],
-        filemtime(ACB_ASSETS_PATH . '/blocks/spacer/style.css')
+        filemtime(ASBL_ASSETS_PATH . '/blocks/spacer/style.css')
     );
 
     register_block_type('astratic/block-spacer', [

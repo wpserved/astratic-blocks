@@ -1,6 +1,6 @@
 <?php
 
-require ACB_ROOT_PATH . '/vendor/autoload.php';
+require ASBL_ROOT_PATH . '/vendor/autoload.php';
 
 if (! function_exists('pluginDoc') && function_exists('AstraticBlocks\\pluginDoc')) {
   /**
