@@ -21,7 +21,6 @@ class Init extends Singleton
     $class = 'AstraticBlocks\\' . $name;
     $index = ! empty($label) ? $label : $name;
     $this->public[$index] = new $class();
-    pluginDoc()->addDocHooks($this->public[$index]);
   }
 
   private function addPrivate(string $name, string $label = ''): void
@@ -29,6 +28,5 @@ class Init extends Singleton
     $class = 'AstraticBlocks\\' . $name;
     $index = ! empty($label) ? $label : $name;
     $this->private[$index] = new $class();
-    pluginDoc()->addDocHooks($this->private[$index]);
   }
 }

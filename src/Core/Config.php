@@ -4,18 +4,19 @@ namespace AstraticBlocks\Core;
 
 class Config
 {
-  /**
-   * @action plugins_loaded
-   */
-  public function initConfig(): void
+  public function __construct()
+  {
+    add_action('plugins_loaded', [$this, 'setConfig']);
+    add_action('wp_enqueue_scripts', [$this, 'addDependencies']);
+    add_action('admin_enqueue_scripts', [$this, 'addAdminDependencies']);
+  }
+
+  public function setConfig(): void
   {
     load_textdomain('astratic-blocks', ASBL_RESOURCES_PATH . '/lang/' . get_locale() . '.mo');
   }
 
-  /**
-   * @action wp_enqueue_scripts
-   */
-  public function dependencies(): void
+  public function addDependencies(): void
   {
     $version = 'production' === wp_get_environment_type() ? null : time();
 
@@ -29,10 +30,7 @@ class Config
     // ]);
   }
 
-  /**
-   * @action admin_enqueue_scripts
-   */
-  public function adminDependencies(): void
+  public function addAdminDependencies(): void
   {
     $version = 'production' === wp_get_environment_type() ? null : time();
 
