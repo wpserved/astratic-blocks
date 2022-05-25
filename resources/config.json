@@ -1,0 +1,11 @@
+{
+  "entry": {
+    "admin": ["scripts/admin.js", "styles/admin.scss"],
+    "front": ["scripts/front.js", "styles/front.scss"]
+  },
+  "publicPath": "/wp-content/plugins/astratic-blocks",
+  "devUrl": "https://plugin.test",
+  "proxyUrl": "http://localhost:3000",
+  "open": false,
+  "watch": ["dist/styles/**/*.css", "dist/scripts/**/*.js", "src/**/*.php"]
+}
