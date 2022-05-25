@@ -1,47 +1,53 @@
 <?php
 
-namespace AstraticCustomBlocks\Core;
+namespace AstraticBlocks\Core;
 
 class Config
 {
-  /**
-   * @action plugins_loaded
-   */
-  public function initConfig(): void
+  public function __construct()
   {
-    load_textdomain('astratic-blocks', ACB_RESOURCES_PATH . '/lang/' . get_locale() . '.mo');
+    add_action('plugins_loaded', [$this, 'setConfig']);
+    add_action('wp_enqueue_scripts', [$this, 'addDependencies']);
+    add_action('admin_enqueue_scripts', [$this, 'addAdminDependencies']);
   }
 
-  /**
-   * @action wp_enqueue_scripts
-   */
-  public function dependencies(): void
+  public function setConfig(): void
+  {
+    load_textdomain('astratic-blocks', ASBL_RESOURCES_PATH . '/lang/' . get_locale() . '.mo');
+  }
+
+  public function addDependencies(): void
   {
     $version = 'production' === wp_get_environment_type() ? null : time();
 
-    wp_enqueue_style('astratic-blocks/front.css', ACB_ASSETS_URI . '/styles/front.css', false, $version);
-    wp_enqueue_script('astratic-blocks/manifest.js', ACB_ASSETS_URI . '/scripts/manifest.js', ['jquery'], $version, true);
-    wp_enqueue_script('astratic-blocks/vendor.js', ACB_ASSETS_URI . '/scripts/vendor.js', ['astratic-blocks/manifest.js'], $version, true);
-    wp_enqueue_script('astratic-blocks/front.js', ACB_ASSETS_URI . '/scripts/front.js', ['astratic-blocks/manifest.js'], $version, true);
+    wp_enqueue_style('astratic-blocks/front.css', ASBL_ASSETS_URI . '/styles/front.css', false, $version);
+    wp_enqueue_script('astratic-blocks/manifest.js', ASBL_ASSETS_URI . '/scripts/manifest.js', ['jquery'], $version, true);
+    wp_enqueue_script('astratic-blocks/front.js', ASBL_ASSETS_URI . '/scripts/front.js', ['astratic-blocks/manifest.js'], $version, true);
 
-    wp_localize_script('astratic-blocks/front.js', 'astratic-blocks', [
+    if (file_exists(ASBL_ASSETS_PATH . '/scripts/vendor.js')) {
+      wp_enqueue_script('astratic-blocks/vendor.js', ASBL_ASSETS_URI . '/scripts/vendor.js', ['astratic-blocks/manifest.js'], $version, true);
+    }
+
+    wp_localize_script('astratic-blocks/front.js', 'asbl', [
       'ajax' => admin_url('admin-ajax.php')
     ]);
   }
 
-  /**
-   * @action admin_enqueue_scripts
-   */
-  public function adminDependencies(): void
+  public function addAdminDependencies(): void
   {
     $version = 'production' === wp_get_environment_type() ? null : time();
 
-    wp_enqueue_style('astratic-blocks/admin.css', ACB_ASSETS_URI . '/styles/admin.css', false, $version);
-    wp_enqueue_script('astratic-blocks/manifest.js', ACB_ASSETS_URI . '/scripts/manifest.js', ['jquery'], $version, true);
-    wp_enqueue_script('astratic-blocks/vendor.js', ACB_ASSETS_URI . '/scripts/vendor.js', ['astratic-blocks/manifest.js'], $version, true);
-    wp_enqueue_script('astratic-blocks/admin.js', ACB_ASSETS_URI . '/scripts/admin.js', ['astratic-blocks/manifest.js'], $version, true);
+    wp_enqueue_style('astratic-blocks/admin.css', ASBL_ASSETS_URI . '/styles/admin.css', false, $version);
+    wp_enqueue_script('astratic-blocks/manifest.js', ASBL_ASSETS_URI . '/scripts/manifest.js', ['jquery'], $version, true);
+    wp_enqueue_script('astratic-blocks/admin.js', ASBL_ASSETS_URI . '/scripts/admin.js', ['astratic-blocks/manifest.js'], $version, true);
 
-    wp_localize_script('astratic-blocks/admin.js', 'astratic-blocks', [
+
+
+    if (file_exists(ASBL_ASSETS_PATH . '/scripts/vendor.js')) {
+      wp_enqueue_script('astratic-blocks/vendor.js', ASBL_ASSETS_URI . '/scripts/vendor.js', ['astratic-blocks/manifest.js'], $version, true);
+    }
+
+    wp_localize_script('astratic-blocks/admin.js', 'asbl', [
       'ajax' => admin_url('admin-ajax.php')
     ]);
   }

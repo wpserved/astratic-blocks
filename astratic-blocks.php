@@ -9,14 +9,14 @@
  * Text Domain: astratic-blocks
  * Domain Path: /resources/lang
  * Requires at least: 5.9
- * Requires PHP: 8.0
+ * Requires PHP: 7.4
  */
 
-define('ACB_ROOT_PATH', dirname(__FILE__));
-define('ACB_ASSETS_PATH', dirname(__FILE__) . '/dist');
-define('ACB_RESOURCES_PATH', dirname(__FILE__) . '/resources');
-define('ACB_ASSETS_URI', plugin_dir_url(__FILE__) . 'dist');
-define('ACB_RESOURCES_URI', plugin_dir_url(__FILE__) . 'resources');
-define('ACB_PREFIX', 'ACB_');
+define('ASBL_VERSION', '1.0.0');
+define('ASBL_ROOT_PATH', dirname(__FILE__));
+define('ASBL_ASSETS_PATH', dirname(__FILE__) . '/dist');
+define('ASBL_RESOURCES_PATH', dirname(__FILE__) . '/resources');
+define('ASBL_ASSETS_URI', plugin_dir_url(__FILE__) . 'dist');
+define('ASBL_RESOURCES_URI', plugin_dir_url(__FILE__) . 'resources');
 
-require ACB_ROOT_PATH . '/inc/bootstrap.php';
+require ASBL_ROOT_PATH . '/inc/bootstrap.php';

@@ -1,19 +1,13 @@
-/**
- * WordPress dependencies
- */
 const { __ } = wp.i18n;
 const { registerBlockType } = wp.blocks
 
-/**
- * Internal dependencies
- */
-import edit from './edit';
-import icon from './icon';
-import save from './save';
+import edit from './scripts/edit';
+import icon from './scripts/icon';
+import save from './scripts/save';
 
 registerBlockType('astratic/spacer', {
-  title: __('Astratic: Responsive Spacer', 'astratic'),
-  description: __('Add white space between blocks and customize its height.', 'astratic'),
+  title: __('Astratic: Responsive Spacer', 'astratic-blocks'),
+  description: __('Add white space between blocks and customize its height.', 'astratic-blocks'),
   category: 'layout',
   supports: {
     anchor: true,
