@@ -1,6 +1,6 @@
 <?php
 
-namespace AstraticCustomBlocks\Core;
+namespace AstraticBlocks\Core;
 
 class Config
 {

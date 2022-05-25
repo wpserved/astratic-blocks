@@ -1,8 +1,8 @@
 <?php
 
-namespace AstraticCustomBlocks;
+namespace AstraticBlocks;
 
-use AstraticCustomBlocks\Core\Singleton;
+use AstraticBlocks\Core\Singleton;
 
 class Init extends Singleton
 {
@@ -18,7 +18,7 @@ class Init extends Singleton
 
   private function addPublic(string $name, string $label = ''): void
   {
-    $class = 'AstraticCustomBlocks\\' . $name;
+    $class = 'AstraticBlocks\\' . $name;
     $index = ! empty($label) ? $label : $name;
     $this->public[$index] = new $class();
     pluginDoc()->addDocHooks($this->public[$index]);
@@ -26,7 +26,7 @@ class Init extends Singleton
 
   private function addPrivate(string $name, string $label = ''): void
   {
-    $class = 'AstraticCustomBlocks\\' . $name;
+    $class = 'AstraticBlocks\\' . $name;
     $index = ! empty($label) ? $label : $name;
     $this->private[$index] = new $class();
     pluginDoc()->addDocHooks($this->private[$index]);

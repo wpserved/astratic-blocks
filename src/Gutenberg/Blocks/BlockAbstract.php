@@ -1,6 +1,6 @@
 <?php
 
-namespace AstraticCustomBlocks\Gutenberg\Blocks;
+namespace AstraticBlocks\Gutenberg\Blocks;
 
 abstract class BlockAbstract
 {

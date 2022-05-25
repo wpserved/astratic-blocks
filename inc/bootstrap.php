@@ -2,7 +2,7 @@
 
 require ACB_ROOT_PATH . '/vendor/autoload.php';
 
-if (! function_exists('pluginDoc') && function_exists('AstraticCustomBlocks\\pluginDoc')) {
+if (! function_exists('pluginDoc') && function_exists('AstraticBlocks\\pluginDoc')) {
   /**
    * Initialize pluginDoc() function.
    *
@@ -10,11 +10,11 @@ if (! function_exists('pluginDoc') && function_exists('AstraticCustomBlocks\\plu
    */
   function pluginDoc(): object
   {
-    return AstraticCustomBlocks\pluginDoc();
+    return AstraticBlocks\pluginDoc();
   }
 }
 
-if (! function_exists('pluginMagicFunction') && function_exists('AstraticCustomBlocks\\pluginMagicFunction')) {
+if (! function_exists('pluginMagicFunction') && function_exists('AstraticBlocks\\pluginMagicFunction')) {
   /**
    * Initialize pluginMagicFunction() function.
    *
@@ -23,11 +23,11 @@ if (! function_exists('pluginMagicFunction') && function_exists('AstraticCustomB
    */
   function pluginMagicFunction(string $moduleName = ''): object
   {
-    return AstraticCustomBlocks\pluginMagicFunction($moduleName);
+    return AstraticBlocks\pluginMagicFunction($moduleName);
   }
 }
 
-if (! function_exists('createClass') && function_exists('AstraticCustomBlocks\\createClass')) {
+if (! function_exists('createClass') && function_exists('AstraticBlocks\\createClass')) {
   /**
    * Initialize createClass() function.
    *

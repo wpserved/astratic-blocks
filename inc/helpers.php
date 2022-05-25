@@ -1,18 +1,18 @@
 <?php
 
-namespace AstraticCustomBlocks;
+namespace AstraticBlocks;
 
-use AstraticCustomBlocks\Init;
-use AstraticCustomBlocks\Core\DocHooks;
+use AstraticBlocks\Init;
+use AstraticBlocks\Core\DocHooks;
 
-if (! function_exists('AstraticCustomBlocks\\pluginDoc')) {
+if (! function_exists('AstraticBlocks\\pluginDoc')) {
   function pluginDoc()
   {
     return DocHooks::get();
   }
 }
 
-if (! function_exists('AstraticCustomBlocks\\pluginMagicFunction')) {
+if (! function_exists('AstraticBlocks\\pluginMagicFunction')) {
   function pluginMagicFunction(string $moduleName = '')
   {
     $modules = Init::get();
@@ -26,7 +26,7 @@ if (! function_exists('AstraticCustomBlocks\\pluginMagicFunction')) {
   }
 }
 
-if (! function_exists('AstraticCustomBlocks\\createClass')) {
+if (! function_exists('AstraticBlocks\\createClass')) {
   /**
    * Create instance of Class
    *

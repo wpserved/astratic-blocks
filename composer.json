@@ -16,7 +16,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "AstraticCustomBlocks\\": "src/"
+      "AstraticBlocks\\": "src/"
     },
     "files": [
       "inc/helpers.php"

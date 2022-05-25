@@ -1,6 +1,6 @@
 <?php
 
-namespace AstraticCustomBlocks\Gutenberg;
+namespace AstraticBlocks\Gutenberg;
 
 class BlocksProvider
 {
