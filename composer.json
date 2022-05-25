@@ -2,21 +2,22 @@
   "name": "src/astratic-blocks",
   "type": "wordpress-plugin",
   "license": "GPL2",
-  "description": "Coditive Plugin",
-  "homepage": "https://coditive.co/",
+  "description": "Astratic Blocks Plugin",
+  "homepage": "https://wpserved.com/",
   "authors": [
     {
-      "name": "Coditive",
-      "email": "dev@coditive.co",
-      "homepage": "https://coditive.co/"
+      "name": "wpserved",
+      "email": "office@wpserved.com",
+      "homepage": "https://wpserved.com/"
     }
   ],
   "keywords": [
+    "astratic",
     "wordpress"
   ],
   "autoload": {
     "psr-4": {
-      "AstraticCustomBlocks\\": "src/"
+      "AstraticBlocks\\": "src/"
     },
     "files": [
       "inc/helpers.php"

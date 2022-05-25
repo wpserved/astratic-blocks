@@ -1,10 +1,11 @@
 {
   "name": "astratic-blocks",
+  "namespace": "asbl",
   "version": "0.0.1",
   "author": {
-    "name": "Coditive",
-    "email": "info@coditive.com",
-    "url:": "https://coditive.co/"
+    "name": "wpserved",
+    "email": "office@wpserved.com",
+    "url:": "https://wpserved.com/"
   },
   "private": true,
   "license": "GPL2",
@@ -14,24 +15,17 @@
     "opera 12"
   ],
   "scripts": {
-    "dev": "npm run development && npm run development -- --env.mixfile=webpack.blocks.mix.js",
+    "dev": "npm run development",
     "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
     "prod": "npm run production",
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "build": "npm run rmdist && npm run rmbuild && npm run production && npm run production -- --env.mixfile=webpack.build.mix.js && rimraf build/*/resources/blocks/*/*.scss && rimraf build/*/resources/blocks/*/*.js",
+    "build": "npm run rmdist && npm run rmbuild && npm run production && npm run production -- --env.mixfile=webpack.build.mix.js && node webpack.build.clean.mix.js",
     "rmdist": "rimraf dist",
     "rmbuild": "rimraf build",
-    "pot": "mkdir -p ./resources/lang && find ./resources ./src -iname '*.php' | xargs xgettext --add-comments=TRANSLATORS --force-po --from-code=UTF-8 --default-domain=en_US -k__ -k_e -k_n:1,2 -k_x:1,2c -k_ex:1,2c -k_nx:4c,12 -kesc_attr__ -kesc_attr_e -kesc_attr_x:1,2c -kesc_html__ -kesc_html_e -kesc_html_x:1,2c -k_n_noop:1,2 -k_nx_noop:3c,1,2, -k__ngettext_noop:1,2 -o resources/lang/astratic-blocks.pot && find ./resources -iname '*.blade.php' | xargs xgettext --language=Python --add-comments=TRANSLATORS --force-po --from-code=UTF-8 --default-domain=en_US -k__ -k_e -k_n:1,2 -k_x:1,2c -k_ex:1,2c -k_nx:4c,12 -kesc_attr__ -kesc_attr_e -kesc_attr_x:1,2c -kesc_html__ -kesc_html_e -kesc_html_x:1,2c -k_n_noop:1,2 -k_nx_noop:3c,1,2, -k__ngettext_noop:1,2 -j -o resources/lang/astratic-blocks.pot",
-    "regenerate": "wp media regenerate --path=../../../",
-    "db:export": "mysqldump -uroot -proot -h127.0.0.1 --default-character-set=utf8mb4 --column-statistics=0 --no-tablespaces indeon_plugin > db.sql && gzip db.sql && mv db.sql.gz ../../../db.sql.gz",
-    "db:export:staging": "npm run srp:local:staging && npm run db:export && npm run srp:staging:local",
-    "db:export:prod": "npm run srp:local:prod && npm run db:export && npm run srp:prod:local",
-    "srp:staging:local": "wp search-replace plugin.staging plugin.test --all-tables --path=../../../ && wp search-replace https://plugin.test http://plugin.test --all-tables --path=../../../ && wp plugin deactivate autoptimize cache-enabler wp-mail-smtp --path=../../../",
-    "srp:prod:local": "wp search-replace plugin.prod plugin.test --all-tables --path=../../../ && wp search-replace https://plugin.test http://plugin.test --all-tables --path=../../../ && wp plugin deactivate autoptimize cache-enabler wp-mail-smtp --path=../../../",
-    "srp:local:staging": "wp search-replace plugin.test plugin.staging --all-tables --path=../../../ && wp search-replace http://plugin.staging https://plugin.staging --all-tables --path=../../../",
-    "srp:local:prod": "wp search-replace plugin.test plugin.prod --all-tables --path=../../../ && wp search-replace http://plugin.prod https://plugin.prod --all-tables --path=../../../"
+    "translate:pot": "wp i18n make-pot . ./resources/lang/astratic-blocks.pot --ignore-domain --include=\"app,resources,wps\" --exclude=\"build\"",
+    "translate:js": "wp i18n make-json ./resources/lang --pretty-print"
   },
   "engines": {
     "node": ">= 12.1.0"
