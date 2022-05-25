@@ -3,12 +3,12 @@
   "type": "wordpress-plugin",
   "license": "GPL2",
   "description": "Coditive Plugin",
-  "homepage": "https://coditive.co/",
+  "homepage": "https://wpserved.com/",
   "authors": [
     {
       "name": "Coditive",
-      "email": "dev@coditive.co",
-      "homepage": "https://coditive.co/"
+      "email": "dev@wpserved.com",
+      "homepage": "https://wpserved.com/"
     }
   ],
   "keywords": [
