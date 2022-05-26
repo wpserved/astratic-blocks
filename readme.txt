@@ -1,7 +1,7 @@
 === Astratic Blocks ===
 Contributors: wpserved
 Donate link: https://wpserved.com/
-Tags: astratic, blocks, patterns, Gutenberg
+Tags: astratic, blocks, patterns, Gutenberg, Astratic
 Requires at least: 5.9
 Tested up to: 5.9.3
 Stable tag: 1.0.1
