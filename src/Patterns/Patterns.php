@@ -16,7 +16,7 @@ class Patterns
 
   public function __construct()
   {
-    $this->dir = PATTERN_MAIN_CATEGORY;
+    $this->dir = ASBL_PATTERNS_PATH;
     $this->patterns = array_filter(scandir($this->dir), function ($item) {
       return ! is_dir($this->dir . '/' . $item) && array_reverse(explode('.', $item))[0] == 'html';
     });
@@ -49,15 +49,18 @@ class Patterns
           }
         }
 
-        register_block_pattern(
-            'astratic-blocks/' . sanitize_title_with_dashes(explode('.', $pattern)[0]),
-            [
+
+        if ($this->shouldRegister($content)) {
+          register_block_pattern(
+              'astratic-blocks/' . sanitize_title_with_dashes(explode('.', $pattern)[0]),
+              [
               'title' => __($content['title'], 'astratic-blocks'),
               'description' => __($content['description'], 'astratic-blocks'),
               'content' => $content['markup'],
               'categories' => $content['categories']
-            ]
-        );
+              ]
+          );
+        }
       }
     }
   }
@@ -75,5 +78,14 @@ class Patterns
     ];
 
     return $content;
+  }
+
+  private function shouldRegister(array $content): bool
+  {
+    if (empty($content['title']) || empty($content['description'])) {
+      return false;
+    }
+
+    return true;
   }
 }

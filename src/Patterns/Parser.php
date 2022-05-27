@@ -8,16 +8,16 @@ class Parser
   {
     switch ($metaType) {
       case 'title':
-        $pattern = "<title>(.+)</title>";
+        $pattern = "\<title\>(.+)\<\/title\>";
           break;
       case 'description':
-        $pattern = "<desc>(.+)</desc>";
+        $pattern = "\<desc\>(.+)\<\/desc\>";
           break;
       case 'categories':
-        $pattern = "<categories (.+?)>(.+)</categories>";
+        $pattern = "\<categories (.+?)\>(.+)\<\/categories\>";
           break;
       default:
-        $pattern = "<astratic-pattern>(.+)</astratic-pattern>";
+        $pattern = "\<astratic\-pattern\>(.+)\<\/astratic\-pattern\>";
           break;
     };
 
