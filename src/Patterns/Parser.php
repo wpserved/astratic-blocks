@@ -8,24 +8,20 @@ class Parser
   {
     switch ($metaType) {
       case 'title':
-        $openTag = "<title>";
-        $closeTag = "</title>";
+        $pattern = "<title>(.+)</title>";
           break;
       case 'description':
-        $openTag = "<desc>";
-        $closeTag = "</desc>";
+        $pattern = "<desc>(.+)</desc>";
           break;
       case 'categories':
-        $openTag = "<categories (.+?)>";
-        $closeTag = "</categories>";
+        $pattern = "<categories (.+?)>(.+)</categories>";
           break;
       default:
-        $openTag = "<astratic-pattern>";
-        $closeTag = "</astratic-pattern>";
+        $pattern = "<astratic-pattern>(.+)</astratic-pattern>";
           break;
     };
 
-    preg_match("~$openTag(.+)$closeTag~misU", $content, $matches);
+    preg_match("/{$pattern}/misU", $content, $matches);
 
     if (! $withTags) {
       $matches = array_reverse($matches);

@@ -12,11 +12,11 @@ class Patterns
   private array $patterns;
   private array $allowedFiles;
   private Parser $parser;
-  private const ABSL_PATTERN_MAIN_CATEGORY = 'Astratic Patterns';
+  private const PATTERN_MAIN_CATEGORY = 'Astratic Patterns';
 
   public function __construct()
   {
-    $this->dir = ASBL_PATTERNS_PATH;
+    $this->dir = PATTERN_MAIN_CATEGORY;
     $this->patterns = array_filter(scandir($this->dir), function ($item) {
       return ! is_dir($this->dir . '/' . $item) && array_reverse(explode('.', $item))[0] == 'html';
     });
@@ -39,7 +39,7 @@ class Patterns
     if ($this->patterns) {
       foreach ($this->patterns as $pattern) {
         $content = $this->getPatternData($pattern);
-        $content['categories'][] = self::ABSL_PATTERN_MAIN_CATEGORY;
+        $content['categories'][] = self::PATTERN_MAIN_CATEGORY;
 
         if (! empty($content['categories'])) {
           foreach ($content['categories'] as &$category) {
