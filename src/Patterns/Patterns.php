@@ -20,6 +20,7 @@ class Patterns
     $this->patterns = array_filter(scandir($this->dir), function ($item) {
       return ! is_dir($this->dir . '/' . $item) && array_reverse(explode('.', $item))[0] == 'html';
     });
+    
     $this->parser = new Parser();
 
     add_action('init', [$this, 'reqisterPatterns'], 1);
