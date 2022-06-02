@@ -22,7 +22,7 @@ You can find full plugin description [here](https://wpserved.com/plugins/astrati
 You can find plugin's source files on our GitHub repo [page](https://github.com/wpserved/astratic-blocks).
 
 == Changelog ==
-= 1.0.2 =
+= 1.1.0 =
 * Implement the pattern parser
 
 = 1.0.1 =
