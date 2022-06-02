@@ -3,7 +3,7 @@
 /**
  * Plugin Name: Astratic Blocks
  * Description: Plugin for implement custom Gutenberg blocks
- * Version: 1.0.2
+ * Version: 1.1.0
  * Author: wpserved
  * Author URI: https://wpserved.com/
  * Text Domain: astratic-blocks
