@@ -16,7 +16,9 @@ define('ASBL_VERSION', '1.0.1');
 define('ASBL_ROOT_PATH', dirname(__FILE__));
 define('ASBL_ASSETS_PATH', dirname(__FILE__) . '/dist');
 define('ASBL_RESOURCES_PATH', dirname(__FILE__) . '/resources');
+define('ASBL_PATTERNS_PATH', dirname(__FILE__) . '/resources/patterns');
 define('ASBL_ASSETS_URI', plugin_dir_url(__FILE__) . 'dist');
 define('ASBL_RESOURCES_URI', plugin_dir_url(__FILE__) . 'resources');
+define('ASBL_PATTERNS_URI', plugin_dir_url(__FILE__) . 'resources/patterns');
 
 require ASBL_ROOT_PATH . '/inc/bootstrap.php';

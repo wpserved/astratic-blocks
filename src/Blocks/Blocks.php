@@ -2,6 +2,7 @@
 
 namespace AstraticBlocks\Blocks;
 
+use AstraticBlocks\Blocks\Base;
 use AstraticBlocks\Blocks\Spacer;
 
 class Blocks
