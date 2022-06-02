@@ -14,6 +14,7 @@ class Init extends Singleton
   {
     $this->addPrivate('Core\Config');
     $this->addPrivate('Blocks\Blocks');
+    $this->addPrivate('Patterns\Patterns');
   }
 
   private function addPublic(string $name, string $label = ''): void
