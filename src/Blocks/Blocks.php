@@ -11,7 +11,6 @@ class Blocks
 
   public function __construct()
   {
-    $this->blocks['base'] = new Base();
     $this->blocks['spacer'] = new Spacer();
   }
 }
