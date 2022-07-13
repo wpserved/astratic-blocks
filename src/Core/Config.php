@@ -31,6 +31,10 @@ class Config
     wp_localize_script('astratic-blocks/front.js', 'asbl', [
       'ajax' => admin_url('admin-ajax.php')
     ]);
+
+    if (! is_admin()) {
+      wp_deregister_style('common');
+    }
   }
 
   public function addAdminDependencies(): void
