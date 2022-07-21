@@ -1,5 +1,7 @@
 # Astratic Blocks
 
+#### :octocat: **Any contribution to Astratic Blocks Plugin is more than welcome!**
+
 ## Description
 Simple plugin enabling custom blocks and patterns to the Gutenberg editor. This plugin is preferred by the [Astratic Theme](https://astratic.com).
 You can find full plugin description [here](https://wpserved.com/plugins/astratic-blocks).
@@ -17,5 +19,7 @@ Automatic install from WordPress Dashboard
 4. Click on Activate;
 5. Go to post or page edit page - now you can use custom blocks in the Gutenberg editor.
 
+## Documentation
+Full documentation is available here: [blocks.astratic.com](https://blocks.astratic.com/)
 
 

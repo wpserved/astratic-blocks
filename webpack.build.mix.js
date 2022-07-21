@@ -14,3 +14,4 @@ mix.copyDirectory(`${rootPath}/vendor`, `build/astratic-blocks/vendor`);
 mix.copyDirectory(`${rootPath}/dist`, `build/astratic-blocks/dist`);
 mix.copyDirectory(`${pluginResources}/views`, `build/astratic-blocks/resources/views`);
 mix.copyDirectory(`${pluginResources}/lang`, `build/astratic-blocks/resources/lang`);
+mix.copyDirectory(`${pluginResources}/patterns`, `build/astratic-blocks/resources/patterns`);
