@@ -1,0 +1,36 @@
+<astratic-pattern>
+  <title>Header, text, buttons, image</title>
+  <desc>Universal content based on Media & Text block</desc>
+  <categories available-options="buttons, columns, gallery, header, text, query">Astratic Content</categories>
+</astratic-pattern>
+
+<!-- wp:media-text {"align":"","mediaPosition":"right","mediaLink":"https://blocks.astratic.com/img/general-img-landscape.png","mediaType":"image"} -->
+<div class="wp-block-media-text has-media-on-the-right is-stacked-on-mobile">
+  <figure class="wp-block-media-text__media">
+    <img src="https://blocks.astratic.com/img/general-img-landscape.png" alt=""/>
+  </figure>
+  
+  <div class="wp-block-media-text__content">
+    <!-- wp:heading -->
+      <h2>Header</h2>
+    <!-- /wp:heading -->
+
+    <!-- wp:paragraph -->
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+    <!-- /wp:paragraph -->
+
+    <!-- wp:buttons -->
+    <div class="wp-block-buttons">
+
+      <!-- wp:button -->
+        <div class="wp-block-button"><a class="wp-block-button__link" href="https://astratic.com">Click here</a></div>
+      <!-- /wp:button -->
+
+      <!-- wp:button {"className":"is-style-outline"} -->
+        <div class="wp-block-button is-style-outline"><a class="wp-block-button__link">or click here</a></div>
+      <!-- /wp:button -->
+    </div>
+    <!-- /wp:buttons -->
+  </div>
+</div>
+<!-- /wp:media-text -->
