@@ -24,6 +24,9 @@ You can find full plugin description [here](https://wpserved.com/plugins/astrati
 You can find plugin's source files on our GitHub repo [page](https://github.com/wpserved/astratic-blocks).
 
 == Changelog ==
+= 1.3.0 =
+* Add custom Block Patterns
+
 = 1.2.0 =
 * Add custom Block Patterns
 * Fix problem with CSS on frontend
