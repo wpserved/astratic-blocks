@@ -30,9 +30,7 @@ For patterns and blocks please use images below. Feel free to copy-paste img url
 #### 6. General Video Placeholder
 `https://blocks.astratic.com/videos/general-video.mp4`
 
-<video width="720" height="540" controls>
-  <source src="/videos/general-video.mp4" type="video/mp4">
-</video>
+[![General Video Placeholder](/img/general-video.png)](https://blocks.astratic.com/videos/general-video.mp4)
 
 #### 7. Payment Icon Apple Pay
 `https://blocks.astratic.com/img/payment-icon-applepay.png`
