@@ -4,7 +4,7 @@ Donate link: https://wpserved.com/
 Tags: astratic, blocks, patterns, Gutenberg, Astratic
 Requires at least: 5.9
 Tested up to: 6.0
-Stable tag: 1.3.0
+Stable tag: 1.4.0
 Requires PHP: 7.4
 License: GNU General Public License v3.0
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
@@ -24,6 +24,15 @@ You can find full plugin description [here](https://wpserved.com/plugins/astrati
 You can find plugin's source files on our GitHub repo [page](https://github.com/wpserved/astratic-blocks).
 
 == Changelog ==
+= 1.4.0 =
+* Fix problem with Astratic: Hero Pattern
+* Fix problem with Astratic: Image & Content (left)
+* Fix problem with Astratic: Image & Content (right)
+* Fix problem with Astratic: Astratic: Image & CTA (left)
+* Fix problem with Astratic: Image & CTA (right)
+* Fix problem with Astratic: Media & Text
+* Fix problem with Astratic: Video Presentation
+
 = 1.3.0 =
 * Add custom Block Patterns
 
