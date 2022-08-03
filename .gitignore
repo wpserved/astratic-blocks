@@ -53,3 +53,6 @@ Thumbs.db
 *.wmv
 
 
+
+# Local Netlify folder
+.netlify

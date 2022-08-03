@@ -31,7 +31,7 @@ For patterns and blocks please use images below. Feel free to copy-paste img url
 `https://blocks.astratic.com/videos/general-video.mp4`
 
 <video width="720" height="540" controls>
-  <source src="videos/general-video.mp4" type="video/mp4">
+  <source src="/videos/general-video.mp4" type="video/mp4">
 </video>
 
 #### 7. Payment Icon Apple Pay
