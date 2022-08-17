@@ -3,6 +3,7 @@ const { registerBlockType } = wp.blocks;
 
 import edit from './scripts/edit';
 import save from './scripts/save';
+import frontend from './scripts/frontend';
 
 registerBlockType('astratic/notice', {
   title: __('Astratic: Notice', 'astratic-blocks'),
@@ -78,3 +79,5 @@ registerBlockType('astratic/notice', {
 		"__experimentalLayout": true
   }
 })
+
+frontend();

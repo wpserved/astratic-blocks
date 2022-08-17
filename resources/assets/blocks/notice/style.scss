@@ -8,7 +8,7 @@
   }
 
   &__button-close {
-    flex-basis: 10%;
+    flex-basis: 5rem;
     align-self: flex-start;
     padding: .8rem;
     text-align: right;
@@ -18,13 +18,24 @@
     border: none !important;
 
     &:hover {
-      opacity: .8;
+      opacity: .7;
       cursor: pointer;
     }
   }
 
   div {
-    flex-basis: 90%;
+    flex-basis: calc(100% - 5rem);
     border: none !important;
+  }
+}
+
+.wp-block-astratic-notice {
+  & > p,
+  & > h2,
+  & > h3,
+  & > h4,
+  & > h5,
+  & > h6 {
+    margin: 0;
   }
 }
