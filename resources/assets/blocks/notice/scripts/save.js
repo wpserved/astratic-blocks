@@ -7,7 +7,7 @@ export default function save({attributes: { tagName: Tag, noticeReload, noticeId
       <Tag { ...useInnerBlocksProps.save( useBlockProps.save() ) } />
 
       <button className="wp-block-notice__button-close wp-block-notice__button-close-front">
-        X
+        &times;
       </button>
     </div>
   )

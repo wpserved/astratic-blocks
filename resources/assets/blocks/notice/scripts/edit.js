@@ -123,7 +123,7 @@ export default function edit( attributes, setAttributes, clientId) {
         ) }
 
         <button className="wp-block-notice__button-close">
-          X
+          &times;
         </button>
       </div>
     </>
