@@ -1,0 +1,42 @@
+.wp-block-notice {
+  display: flex;
+  padding: .5rem;
+
+  &--hidden {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+  }
+
+  &__button-close {
+    flex-basis: 5rem;
+    align-self: flex-start;
+    padding: .8rem;
+    text-align: right;
+    color: inherit !important;
+    background-color: transparent !important;
+    font-size: inherit !important;
+    border: none !important;
+
+    &:hover {
+      opacity: .7;
+      cursor: pointer;
+    }
+  }
+
+  div {
+    flex-basis: calc(100% - 5rem);
+    border: none !important;
+  }
+}
+
+.wp-block-astratic-notice {
+  & > p,
+  & > h2,
+  & > h3,
+  & > h4,
+  & > h5,
+  & > h6 {
+    margin: 0;
+  }
+}
