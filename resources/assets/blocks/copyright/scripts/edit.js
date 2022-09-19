@@ -1,6 +1,6 @@
 const edit = () => {
   const year = new Date().getFullYear();
-  const sitename = 'Lorem ipsum';
+  const sitename = script_vars.site_title;
 
   return (
     <>
