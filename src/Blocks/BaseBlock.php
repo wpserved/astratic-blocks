@@ -53,7 +53,7 @@ abstract class BaseBlock implements Block
 
             switch ($group) {
               case 'styles':
-                wp_enqueue_style("astratic/{$this->getSlug()}/$key", $data[$key], ['wp-edit-blocks'], $version);
+                wp_enqueue_style("astratic/{$this->getSlug()}/$key", $data[$key], $version);
                   break;
 
               case 'scripts':
