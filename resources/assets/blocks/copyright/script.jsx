@@ -4,6 +4,7 @@ const { registerBlockType } = wp.blocks
 import edit from './scripts/edit';
 import icon from './scripts/icon';
 import save from './scripts/save';
+import frontend from './scripts/frontend';
 
 registerBlockType('astratic/base', {
   title: __('Astratic: Copyright', 'astratic-blocks'),
