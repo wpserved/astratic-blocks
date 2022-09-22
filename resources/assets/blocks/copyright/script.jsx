@@ -38,3 +38,4 @@ registerBlockType('astratic/base', {
   save
 });
 
+frontend();

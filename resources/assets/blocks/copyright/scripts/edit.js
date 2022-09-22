@@ -7,7 +7,7 @@ const edit = ( props ) => {
   const {text, year, sitename, alignment} = attributes;
 
   setAttributes({year: new Date().getFullYear()});
-  setAttributes({sitename: script_vars.site_title});
+  setAttributes({sitename: astratic_copyright_vars.site_title});
 
   const onChangeAlignment = (newAlignment) => {
     setAttributes({alignment: newAlignment})
