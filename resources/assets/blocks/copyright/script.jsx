@@ -3,7 +3,7 @@ const { registerBlockType } = wp.blocks
 
 import edit from './scripts/edit';
 import icon from './scripts/icon';
-// import save from './scripts/save';
+import save from './scripts/save';
 
 registerBlockType('astratic/base', {
   title: __('Astratic: Copyright', 'astratic-blocks'),
@@ -17,8 +17,23 @@ registerBlockType('astratic/base', {
       type: 'string',
       default: ''
     },
+    text: {
+      type: "string",
+      default: "Copyrights "
+    },
+    year: {
+      type: "string",
+    },
+    sitename: {
+      type: "string",
+    },
+    alignment: {
+      type: "string",
+      default: "left",
+    }
   },
   icon,
-  edit
+  edit,
+  save
 });
 
