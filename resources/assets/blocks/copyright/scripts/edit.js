@@ -1,6 +1,6 @@
 const edit = () => {
   const year = new Date().getFullYear();
-  const sitename = script_vars.site_title;
+  const sitename = astratic_copyright_vars.site_title;
 
   return (
     <>
