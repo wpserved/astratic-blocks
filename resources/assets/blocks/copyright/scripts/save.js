@@ -1,6 +1,6 @@
 const {useBlockProps, RichText} = wp.blockEditor;
 
-const save = ({ attributes: {text, year, sitename, alignment, showtitle}}) => {
+const save = ({ attributes: {text, alignment, showtitle, textafter}}) => {
   return (
     <>
       <div 
@@ -14,7 +14,13 @@ const save = ({ attributes: {text, year, sitename, alignment, showtitle}}) => {
             value={text}
             tagName="span"
           />
-          &copy; { year } { sitename }
+          &copy; <span id="copy-year"></span> { showtitle ? 
+            <span id="copy-sitename"></span> :
+            <RichText.Content
+              value={textafter}
+              tagName="span"
+            />
+          }
         </p>
       </div>
     </>
