@@ -1,10 +1,15 @@
-const { RichText} = wp.blockEditor;
+const {useBlockProps, RichText} = wp.blockEditor;
 
-const save = ({ attributes: {text, year, sitename}}) => {
+const save = ({ attributes: {text, year, sitename, alignment, showtitle}}) => {
   return (
     <>
-      <div class="wp-block-astratic-copyright" aria-hidden>
-        <p>
+      <div 
+        {...useBlockProps.save({
+          className: "wp-block-astratic-copyright"
+        })}
+       aria-hidden
+      >
+        <p className={`wp-block-astratic-copyright-alignment-${alignment}`}>
           <RichText.Content
             value={text}
             tagName="span"

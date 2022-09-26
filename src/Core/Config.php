@@ -32,9 +32,9 @@ class Config
       'ajax' => admin_url('admin-ajax.php')
     ]);
 
-    if (! is_admin()) {
-      wp_deregister_style('common');
-    }
+    // if (! is_admin()) {
+    //   wp_deregister_style('common');
+    // }
   }
 
   public function addAdminDependencies(): void
