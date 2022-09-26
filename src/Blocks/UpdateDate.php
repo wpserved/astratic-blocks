@@ -11,6 +11,9 @@ class UpdateDate extends BaseBlock implements Block
   {
     $this->setSlug('updatedate');
     $this->setTitle('Update Date');
+    $this->addVariable('site_title', get_bloginfo('name') ?? '');
+    $this->addVariable('site_update', get_the_modified_time('U') ?? '');
+    $this->addVariable('site_test', get_the_ID() ?? '');
     parent::__construct();
   }
 }

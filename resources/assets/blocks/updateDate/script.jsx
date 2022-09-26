@@ -4,6 +4,7 @@ const { registerBlockType } = wp.blocks
 import edit from './scripts/edit';
 import icon from './scripts/icon';
 import save from './scripts/save';
+import frontend from './scripts/frontend';
 
 registerBlockType('astratic/updatedate', {
   title: __('Astratic: Last Post Update Date', 'astratic-blocks'),
@@ -16,4 +17,6 @@ registerBlockType('astratic/updatedate', {
   edit,
   save,
 })
+
+frontend();
 
