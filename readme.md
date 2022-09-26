@@ -19,5 +19,7 @@ Automatic install from WordPress Dashboard
 4. Click on Activate;
 5. Go to post or page edit page - now you can use custom blocks in the Gutenberg editor.
 
+## Documentation
+Full documentation is available here: [blocks.astratic.com](https://blocks.astratic.com/)
 
 

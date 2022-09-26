@@ -45,11 +45,11 @@ Thumbs.db
 *.war
 
 # Large media files
-*.mp4
 *.tiff
 *.avi
 *.flv
 *.mov
 *.wmv
 
-
+# Local Netlify folder
+.netlify
