@@ -1,5 +1,6 @@
 export default function frontend() {
-  window.onload = () => {
+  window.addEventListener('DOMContentLoaded', () => {
+
     const blocks = [...document.querySelectorAll('.wp-block-notice')];
 
     function getCookie(name) {
@@ -23,5 +24,5 @@ export default function frontend() {
         document.cookie = `notice${noticeId}=true;expires=${reloadDate.toUTCString()};path=/`;
       })
     })
-  }
+  })
 }
