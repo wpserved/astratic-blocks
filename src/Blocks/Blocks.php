@@ -2,8 +2,8 @@
 
 namespace AstraticBlocks\Blocks;
 
-use AstraticBlocks\Blocks\Base;
 use AstraticBlocks\Blocks\Spacer;
+use AstraticBlocks\Blocks\Copyright;
 
 class Blocks
 {
@@ -12,5 +12,6 @@ class Blocks
   public function __construct()
   {
     $this->blocks['spacer'] = new Spacer();
+    $this->blocks['copyright'] = new Copyright();
   }
 }

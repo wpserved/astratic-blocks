@@ -14,6 +14,10 @@ module.exports = {
         text: 'Placeholder images',
         link: '/images',
       },
+      {
+        text: 'Blocks',
+        link: '/blocks',
+      }
     ],
   }),
 }
