@@ -4,6 +4,7 @@ namespace AstraticBlocks\Blocks;
 
 use AstraticBlocks\Blocks\Spacer;
 use AstraticBlocks\Blocks\Copyright;
+use AstraticBlocks\Blocks\Accordeons;
 
 class Blocks
 {
@@ -13,5 +14,6 @@ class Blocks
   {
     $this->blocks['spacer'] = new Spacer();
     $this->blocks['copyright'] = new Copyright();
+    $this->blocks['accordeons'] = new Accordeons();
   }
 }
