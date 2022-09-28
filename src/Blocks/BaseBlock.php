@@ -16,6 +16,10 @@ abstract class BaseBlock implements Block
 
   private array $keywords = [];
 
+  private array $attributes = [];
+
+  private array $variables = [];
+
   public function __construct()
   {
     add_action('init', [$this, 'register']);
@@ -31,6 +35,7 @@ abstract class BaseBlock implements Block
         'category' => $this->getCategory(),
         'description' => $this->getDescription(),
         'keywords' => $this->getKeywords(),
+        'attributes' => $this->getAttributes()
       ];
 
       $items = [
@@ -60,6 +65,11 @@ abstract class BaseBlock implements Block
                 wp_enqueue_script("astratic/{$this->getSlug()}/$key", $data[$key], [
                   'wp-blocks', 'wp-element', 'wp-block-editor', 'wp-compose', 'wp-components', 'wp-i18n'
                 ], $version);
+
+                if ($key === 'script') {
+                  wp_localize_script("astratic/{$this->getSlug()}/$key", "astratic_{$this->getSlug()}_vars", $this->getVariables());
+                }
+
                   break;
             }
           }
@@ -153,5 +163,35 @@ abstract class BaseBlock implements Block
   public function hasAsset(string $type): bool
   {
     return file_exists(ASBL_ASSETS_PATH . "/blocks/{$this->getSlug()}/{$type}");
+  }
+
+  public function getAttributes(): array
+  {
+    return $this->attributes;
+  }
+
+  public function setAttributes(array $attributes): void
+  {
+    $this->attributes = $attributes;
+  }
+
+  public function hasAttributes(array $attributes): void
+  {
+    $this->attributes = $attributes;
+  }
+
+  public function setVariables(array $variables): void
+  {
+    $this->variables = $variables;
+  }
+
+  public function addVariable(string $key, $value): void
+  {
+    $this->variables[$key] = $value;
+  }
+
+  public function getVariables(): array
+  {
+    return $this->variables;
   }
 }
