@@ -20,11 +20,11 @@ registerBlockType('astratic/accordions', {
     },
     buttons: {
       type: "array",
-      default: ['Button Text','Button Text','Button Text','Button Text','Button Text','Button Text','Button Text','Button Text','Button Text','Button Text']
+      default: ['Button Text','Button Text','Button Text','Button Text','Button Text','Button Text','Button Text','Button Text','Button Text','Button Text', 'Button Text','Button Text','Button Text','Button Text','Button Text','Button Text','Button Text','Button Text','Button Text','Button Text']
     },
     text: {
       type: "array",
-      default: ['Text Content','Text Content','Text Content','Text Content','Text Content','Text Content','Text Content','Text Content','Text Content','Text Content']
+      default: ['Text Content','Text Content','Text Content','Text Content','Text Content','Text Content','Text Content','Text Content','Text Content','Text Content','Text Content','Text Content','Text Content','Text Content','Text Content','Text Content','Text Content','Text Content','Text Content','Text Content']
     },
   },
   icon,

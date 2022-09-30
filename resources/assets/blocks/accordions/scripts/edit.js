@@ -3,8 +3,13 @@ const {
   useBlockProps,
   RichText,
   BlockControls,
-  AlignmentToolbar
+  InspectorControls
 } = wp.blockEditor;
+const {
+  PanelBody,
+  RangeControl,
+  SelectControl 
+} = wp.components;
 
 const edit = ( props ) => {
   const {attributes, setAttributes} = props;
@@ -22,6 +27,21 @@ const edit = ( props ) => {
 
   return (
     <>
+      <InspectorControls>
+        <PanelBody title={__('Accordions Settings', 'astratic-blocks')}>
+          <RangeControl
+            label={__('Number of items')}
+            value={numberOfButtons}
+            min={1}
+            max={20}
+            step={1}
+            onChange={ ( value ) => 
+              setAttributes( { numberOfButtons: value } )
+            }
+          />
+        </PanelBody>
+      </InspectorControls>
+
       <div
         {...useBlockProps({
           className: "wp-block-astratic-accordions"

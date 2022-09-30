@@ -1,6 +1,6 @@
 const {useBlockProps, RichText} = wp.blockEditor;
 
-const save = ({ attributes: {text, numberOfButtons}}) => {
+const save = ({ attributes: {numberOfButtons, buttons, text}}) => {
 
   const Items = () => {
     const accordions = [];
@@ -9,8 +9,23 @@ const save = ({ attributes: {text, numberOfButtons}}) => {
       accordions.push(
         <div className="wp-block-astratic-accordeons__item">
           <RichText.Content
-            value={text[i]}
+            value={buttons[i]}
             tagName="button"
+            id={`accordion-control-${i}`}
+            className="wp-block-astratic-accordions__item-toggler"
+            aria-controls={`accordion-${i}`}
+            aria-expanded="false"
+            data-accordion-toggler
+          />
+
+          <RichText.Content
+            value={text[i]}
+            tagName="div"
+            id={`accordion-${i}`}
+            className="wp-block-astratic-accordions__item-content"
+            aria-hidden="true"
+            aria-labelledby={`accordion-control-${i}`}
+            data-accordion-content
           />
         </div>
       )
@@ -25,7 +40,7 @@ const save = ({ attributes: {text, numberOfButtons}}) => {
         {...useBlockProps.save({
           className: "wp-block-astratic-accordions"
         })}
-       aria-hidden
+        data-block-accordions
       >
         <Items />
       </div>
