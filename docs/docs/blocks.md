@@ -1,6 +1,5 @@
 # Blocks
 
-
 ## Footer Copyrights
 
 This block displayes copyrights, it is most likely to be used in the website footer. The block contains three parts.
@@ -69,3 +68,19 @@ Notice block can display inside any content/blocks set by user. The close button
   * width
   * color
   * radius
+
+## Responsive Spacer
+
+This block is the extension for the default Spacer block, and it allows us to add the spacer with fixed different sizes for different types of devices.
+
+![Spacer Block](/img/spacer-main.png)
+
+#### Features
+
+1) Spacing
+  * general height
+  * horizontal tablet height
+  * vertical tablet height
+  * mobile height
+
+2) Drag adjustment
