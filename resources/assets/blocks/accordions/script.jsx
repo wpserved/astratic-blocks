@@ -26,6 +26,10 @@ registerBlockType('astratic/accordions', {
       type: "array",
       default: ['Text Content','Text Content','Text Content','Text Content','Text Content','Text Content','Text Content','Text Content','Text Content','Text Content','Text Content','Text Content','Text Content','Text Content','Text Content','Text Content','Text Content','Text Content','Text Content','Text Content']
     },
+    autoClose: {
+      type: "boolean",
+      default: true
+    }
   },
   icon,
   edit,

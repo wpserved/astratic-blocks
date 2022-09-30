@@ -8,12 +8,13 @@ const {
 const {
   PanelBody,
   RangeControl,
-  SelectControl 
+  SelectControl,
+  ToggleControl
 } = wp.components;
 
 const edit = ( props ) => {
   const {attributes, setAttributes} = props;
-  const {numberOfButtons, buttons, text} = attributes;
+  const {numberOfButtons, buttons, text, autoClose} = attributes;
 
   const onChangeButtonText = (newText, i) => {
     const updatedText = buttons.map((value, index) => i === index ? newText : value)
@@ -38,6 +39,12 @@ const edit = ( props ) => {
             onChange={ ( value ) => 
               setAttributes( { numberOfButtons: value } )
             }
+          />
+
+          <ToggleControl
+            label={__('Close item when clicked on another button')}
+            checked={autoClose}
+            onChange={(newVal) => setAttributes({ autoClose: newVal })}
           />
         </PanelBody>
       </InspectorControls>

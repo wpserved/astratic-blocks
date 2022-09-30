@@ -1,6 +1,6 @@
 const {useBlockProps, RichText} = wp.blockEditor;
 
-const save = ({ attributes: {numberOfButtons, buttons, text}}) => {
+const save = ({ attributes: {numberOfButtons, buttons, text, autoClose}}) => {
 
   const Items = () => {
     const accordions = [];
@@ -41,6 +41,7 @@ const save = ({ attributes: {numberOfButtons, buttons, text}}) => {
           className: "wp-block-astratic-accordions"
         })}
         data-block-accordions
+        data-auto-close={autoClose}
       >
         <Items />
       </div>
