@@ -1,5 +1,5 @@
 export default function frontend() {
-  window.onload = () => {
+  window.addEventListener('DOMContentLoaded', () => {
     const yearEl = document.querySelector('#copy-year');
     const sitenameEl = document.querySelector('#copy-sitename');
 
@@ -10,5 +10,5 @@ export default function frontend() {
     if (sitenameEl) {
       sitenameEl.textContent = astratic_copyright_vars.site_title;
     }
-  }
+  })
 }
