@@ -1,19 +1,15 @@
-.astratic-pattern-content-photo-left {
+.astratic-pattern-content-photo-right {
   @include up(md) {
-    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 
   @include up(xl) {
-    padding-right: 0 !important;
+    padding-left: 0 !important;
   }
 
   .wp-block-columns {
     @include up(md) {
-      padding-right: calc((100vw - var(--wp--style--global--content-size)) / 2);
-    }
-
-    @include down(md) {
-      flex-direction: column-reverse;
+      padding-left: calc((100vw - var(--wp--style--global--content-size)) / 2);
     }
   }
 
@@ -26,20 +22,16 @@
       padding-bottom: 0 !important;
     }
 
-    &:last-of-type {
+    &:first-of-type {
       @include up(md) {
         max-width: calc(var(--wp--style--global--content-size) / 2);
       }
 
       .wp-block-group {
         @include up(md) {
-          padding-left: 56px;
+          padding-right: 56px;
         }
       }
-    }
-
-    img {
-      min-height: 400px;
     }
   }
 }
