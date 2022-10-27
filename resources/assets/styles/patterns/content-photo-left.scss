@@ -1,0 +1,14 @@
+.astratic-pattern-content-photo-left {
+  @include up(md) {
+    padding-left: 0 !important;
+  }
+
+  .wp-block-column {
+    min-height: 400px;
+
+    @include down(md) {
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+    }
+  }
+}
