@@ -1,0 +1,14 @@
+.astratic-pattern-cta-simple {
+  .wp-block-columns {
+    @include down(lg) {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  .wp-block-buttons {
+    @include down(lg) {
+      justify-content: center !important;
+    }
+  }
+}
