@@ -14,6 +14,14 @@
     }
   }
 
+  .wp-block-group {
+    padding-left: 0 !important;
+  }
+
+  .wp-block-image {
+    padding-right: 0 !important;
+  }
+
   h1.is-style-default {
     @include down(md) {
       font-size: var(--wp--preset--font-size--large);
