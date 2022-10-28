@@ -5,4 +5,18 @@
     padding-top: 30px !important;
     padding-bottom: 30px !important;
   }
+
+  .wp-block-group,
+  .wp-block-image {
+    @include down(md) {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+  }
+
+  h1.is-style-default {
+    @include down(md) {
+      font-size: var(--wp--preset--font-size--large);
+    }
+  }
 }

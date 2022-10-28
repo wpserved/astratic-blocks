@@ -5,4 +5,10 @@
     padding-top: 30px !important;
     padding-bottom: 30px !important;
   }
+
+  & > .is-layout-flex.wp-block-columns {
+    @include down(md) {
+      gap: 40px;
+    }
+  }
 }

@@ -5,4 +5,27 @@
     padding-top: 30px !important;
     padding-bottom: 30px !important;
   }
+
+  & > .is-layout-flex {
+    @include down(md) {
+      gap: 25px 0 !important;
+    }
+  }
+
+  .wp-block-columns {
+    .wp-block-column {
+      & > .is-layout-flex {
+        @include down(md) {
+          gap: 10px;
+          padding-top: 5px !important;
+        }
+
+        p {
+          @include down(md) {
+            font-size: var(--wp--preset--font-size--small) !important;
+          }
+        }
+      }
+    }
+  }
 }
