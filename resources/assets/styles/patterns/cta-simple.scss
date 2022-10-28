@@ -1,4 +1,11 @@
 .astratic-pattern-cta-simple {
+  margin-block-start: 0 !important;
+
+  @include down(md) {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+
   .wp-block-columns {
     @include down(lg) {
       flex-direction: column;
