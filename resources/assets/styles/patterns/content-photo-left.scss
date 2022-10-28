@@ -26,7 +26,6 @@
 
   .wp-block-column {
     min-height: 400px;
-    flex: 1;
 
     @include down(md) {
       padding-top: 0 !important;
@@ -39,8 +38,8 @@
       }
 
       .wp-block-group {
-        @include up(md) {
-          padding-left: 56px;
+        @include down(md) {
+          padding-left: 0 !important;
         }
       }
     }
