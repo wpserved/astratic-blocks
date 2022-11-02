@@ -13,11 +13,48 @@ Add special custom blocks and patterns to the Gutenberg.
 
 == Description ==
 
+= Do more with fewer tools. Boost your WordPress Editor experience. =
+
+Do more with fewer tools. Use Page Sections Mockups to create mockups right within the WordPress Block Editor. Design and implement websites within the standard WordPress editor: starting from mockups to designs, to implementation, to a successful launch. 
+
+[Astratic Blocks plugin](https://astratic.com/plugin/?utm_source=wp_org&utm_medium=plugin_page&utm_campaign=astratic_blocks&utm_id=astratic_blocks) provides a library of patterns crafted with default Gutenberg blocks, with the addition of smart custom blocks to take make your website responsive, and a few other custom blocks so you don't need to write a single line of code.
+
+= Expertly crafted =
+
+We were [building WordPress websites](https://wpserved.com/?utm_source=wp_org&utm_medium=plugin_page&utm_campaign=astratic_blocks&utm_id=astratic_blocks) for clients from all around the world since 2009. That is why we know the pain of using the wrong tools, tools that are overcomplicated, tools that are excellent and shiny on the surface, but not bringing the actual value in your daily work.
+
+= PAGE SECTIONS MOCKUPS =
+
+In current version of the plugin you will find 21 well thought Page Sections mockups in categories like:
+- Hero Section
+- Features Section
+- Call To Action
+- Pricing
+- FAQ
+- Header Sections
+- Testimonials
+- Rich Content 
+- Blog / News
+- Team Sections
+- Gallery
+- Clients Showcase
+
+
+= SMART BLOCKS =
+
+- **Responsive Spacer** lets you customize spacer height for mobile, tablet and desktop devices
+- **Copyright Footer Info** displays copyright information in your website's footer
+- **Notice**
+
+= COMING SOON =
+
+- New set of Page Sections mockups
+- Full Page Templates and Layouts
+- More smart custom blocks to make your work easier and more efficient
+
+= JOIN US =
+
 😎 **[Join us on Github and contribute](https://github.com/wpserved/astratic-blocks)**
-
-Simple plugin enabling custom blocks and patterns to the Gutenberg editor. This plugin is preferred by the [Astratic Theme](https://astratic.com).
-
-You can find full plugin description [here](https://wpserved.com/plugins/astratic-blocks).
 
 == Source files ==
 
