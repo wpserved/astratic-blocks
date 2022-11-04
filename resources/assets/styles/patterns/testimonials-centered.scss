@@ -1,0 +1,26 @@
+.astratic-pattern-testimonials-centered {
+  margin-block-start: 0 !important;
+
+  @include down(md) {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+
+  & > .is-horizontal {
+    @include down(md) {
+      margin-block-start: 1rem;
+    }
+
+    & > .wp-block-columns {
+      @include down(md) {
+        gap: 12px;
+      }
+    }
+
+    .has-normal-font-size {
+      @include down(md) {
+        font-size: var(--wp--preset--font-size--small) !important;
+      }
+    }
+  }
+}

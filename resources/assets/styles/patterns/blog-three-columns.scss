@@ -1,0 +1,26 @@
+.astratic-pattern-blog-three-columns {
+  margin-block-start: 0 !important;
+
+  @include down(md) {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+
+  & > h2 {
+    margin-bottom: 30px !important;
+  }
+
+  .wp-block-post-excerpt {
+    @include down(md) {
+      margin-top: .8rem !important;
+    }
+  }
+
+  .wp-block-post {
+    &:not(:last-child) {
+      @include down(md) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

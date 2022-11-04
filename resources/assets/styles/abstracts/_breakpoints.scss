@@ -1,0 +1,41 @@
+/**
+ * Breakpoints variables
+ * You can change the breakpoint values below
+ */
+ $breakpoints: (
+  sm: 544,
+  md: 768,
+  lg: 992,
+  xl: 1200,
+  xxl: 1400,
+) !default; /* stylelint-disable-line */
+
+/**
+ * Mixin to manage responsive breakpoints
+ * Usage Example - @include up(sm)
+ */
+
+ @mixin up($up-breakpoint, $up-breakpoints: $breakpoints) {
+  @if map-has-key($up-breakpoints, $up-breakpoint) {
+    $up-breakpoint: map-get($up-breakpoints, $up-breakpoint);
+  }
+
+  @media (min-width: #{$up-breakpoint + "px"}) {
+    @content;
+  }
+}
+
+/**
+ * Mixin to manage responsive breakpoints
+ * Usage Example - @include down(sm)
+ */
+
+@mixin down($down-breakpoint, $down-breakpoints: $breakpoints) {
+  @if map-has-key($down-breakpoints, $down-breakpoint) {
+    $down-breakpoint: map-get($down-breakpoints, $down-breakpoint);
+  }
+
+  @media (max-width: #{$down-breakpoint - 1 + "px"}) {
+    @content;
+  }
+}

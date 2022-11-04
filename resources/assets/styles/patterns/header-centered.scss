@@ -1,0 +1,8 @@
+.astratic-pattern-header-centered {
+  margin-block-start: 0 !important;
+
+  @include down(md) {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+}

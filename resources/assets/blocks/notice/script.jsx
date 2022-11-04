@@ -3,13 +3,14 @@ const { registerBlockType } = wp.blocks;
 
 import edit from './scripts/edit';
 import save from './scripts/save';
+import icon from './scripts/icon';
 import frontend from './scripts/frontend';
 
 registerBlockType('astratic/notice', {
   title: __('Astratic: Notice', 'astratic-blocks'),
   description: __('Add notice element with custom content and close button.', 'astratic-blocks'),
   category: 'text',
-  icon: "welcome-comments",
+  icon,
   edit,
   save,
   attributes: {
