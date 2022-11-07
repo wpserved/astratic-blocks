@@ -2,9 +2,9 @@
 Contributors: wpserved
 Donate link: https://wpserved.com/
 Tags: astratic, blocks, patterns, Gutenberg, Astratic
-Requires at least: 5.9
-Tested up to: 6.0
-Stable tag: 1.4.0
+Requires at least: 6.1
+Tested up to: 6.1
+Stable tag: 1.5.0
 Requires PHP: 7.4
 License: GNU General Public License v3.0
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
@@ -61,6 +61,35 @@ In current version of the plugin you will find 21 well thought Page Sections moc
 You can find plugin's source files on our GitHub repo [page](https://github.com/wpserved/astratic-blocks).
 
 == Changelog ==
+= 1.5.0 =
+This release implements a new version of patterns. Following patterns have been added:
+* Blog Section: Three Columns mockup
+* Clients Section: Simple mockup
+* Clients Section: Two Columns mockup
+* Content Section: With Photo On Left mockup
+* Content Section: With Photo On Right mockup
+* Content Section: Two Columns mockup
+* CTA Section: Centered mockup
+* CTA Section: Simple Centered mockup
+* CTA Section: Simple mockup
+* FAQ Section: Simple mockup
+* FAQ Section: Two Columns mockup
+* Features Section: Three Columns mockup
+* Gallery Section: Two Columns Grid mockup
+* Header Section: Centered mockup
+* Header Section: Simple mockup
+* Hero Section: Simple Centered mockup
+* Hero Section: With Right Image mockup
+* Pricing Section: Three Columns With Background mockup
+* Pricing Section: Three Columns Cards mockup
+* Pricing Section: Three Columns mockup
+* Team Section: Three Columns mockup
+* Testimonials Section: Centered mockup
+* Testimonials Section: Three Columns mockup
+New blocks are introduced:
+* Notice Block 
+* Copyright Block
+
 = 1.4.0 =
 * Fix problem with Astratic: Hero Pattern
 * Fix problem with Astratic: Image & Content (left)
