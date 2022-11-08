@@ -4,7 +4,7 @@ Donate link: https://wpserved.com/
 Tags: astratic, blocks, patterns, Gutenberg, Astratic
 Requires at least: 6.1
 Tested up to: 6.1
-Stable tag: 1.5.0
+Stable tag: 1.5.1
 Requires PHP: 7.4
 License: GNU General Public License v3.0
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
@@ -61,6 +61,9 @@ In current version of the plugin you will find 21 well thought Page Sections moc
 You can find plugin's source files on our GitHub repo [page](https://github.com/wpserved/astratic-blocks).
 
 == Changelog ==
+= 1.5.1 =
+* Change the minimum WordPress version
+
 = 1.5.0 =
 This release implements a new version of patterns. Following patterns have been added:
 * Blog Section: Three Columns mockup

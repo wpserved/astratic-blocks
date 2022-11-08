@@ -3,16 +3,16 @@
 /**
  * Plugin Name: Astratic Blocks
  * Description: Plugin for implement custom Gutenberg blocks
- * Version: 1.5.0
+ * Version: 1.5.1
  * Author: wpserved
  * Author URI: https://wpserved.com/
  * Text Domain: astratic-blocks
  * Domain Path: /resources/lang
- * Requires at least: 5.9
+ * Requires at least: 6.1
  * Requires PHP: 7.4
  */
 
-define('ASBL_VERSION', '1.5.0');
+define('ASBL_VERSION', '1.5.1');
 define('ASBL_ROOT_PATH', dirname(__FILE__));
 define('ASBL_ASSETS_PATH', dirname(__FILE__) . '/dist');
 define('ASBL_RESOURCES_PATH', dirname(__FILE__) . '/resources');
