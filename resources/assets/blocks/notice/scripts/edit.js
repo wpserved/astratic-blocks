@@ -78,6 +78,17 @@ export default function edit( attributes, setAttributes, clientId) {
 
   attributes.setAttributes({noticeId: newId})
 
+  let closeButton;
+  let noticeBlock;
+  
+  if (noticeReload > 0) {
+    closeButton = <button className="wp-block-notice__button-close">&times;</button>;
+  }
+
+  if (noticeReload == 0) {
+    noticeBlock = <p class="components-base-control__help">{__('Notice will be visible all the time', 'astratic-blocks')}</p>;
+  }
+
   return (
     <>
       <InspectorControls>
@@ -92,6 +103,7 @@ export default function edit( attributes, setAttributes, clientId) {
               attributes.setAttributes( { noticeReload: value } )
             }
           />
+          {noticeBlock}
         </PanelBody>
       </InspectorControls>
       <InspectorControls __experimentalGroup="advanced">
@@ -122,9 +134,7 @@ export default function edit( attributes, setAttributes, clientId) {
           </TagName>
         ) }
 
-        <button className="wp-block-notice__button-close">
-          &times;
-        </button>
+        {closeButton}
       </div>
     </>
   )
