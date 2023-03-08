@@ -15,5 +15,6 @@ class Blocks
     $this->blocks['spacer'] = new Spacer();
     $this->blocks['notice'] = new Notice();
     $this->blocks['copyright'] = new Copyright();
+    $this->blocks['accordion'] = new Accordion();
   }
 }

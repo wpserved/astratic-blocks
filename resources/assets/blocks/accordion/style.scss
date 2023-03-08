@@ -1,0 +1,25 @@
+.wp-block-astratic-accordion {
+  &__toggler {
+    width: 100%;
+    padding: 1.6rem;
+    appearance: none;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    text-align: left;
+  }
+
+  &__content {
+    max-height: 0;
+    transition: max-height .2s ease-out;
+    overflow: hidden;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+  }
+}
+
+.wp-block-astratic-accordion + .wp-block-astratic-accordion {
+  margin-top: .6rem;
+}
+
+
