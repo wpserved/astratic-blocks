@@ -1,0 +1,23 @@
+// .block-editor-block-list__block {
+//   &[data-type='astratic/icon'] {
+//     &:not(.wp-block-astratic-icon-container) {
+//       padding: 0 !important;
+//       background-color: unset !important;
+//       color: unset !important;
+//       border: 0 solid transparent !important;
+//       border-radius: 0 !important;
+//     }
+//   }
+// }
+
+.wp-block-astratic-icon {
+  display: grid;
+  box-sizing: border-box;
+  position: relative;
+
+  svg {
+    fill: currentColor !important;
+  }
+}
+
+
