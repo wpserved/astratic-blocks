@@ -4,7 +4,7 @@ Donate link: https://wpserved.com/
 Tags: astratic, blocks, patterns, Gutenberg, Astratic
 Requires at least: 6.1
 Tested up to: 6.3
-Stable tag: 1.6.1.2
+Stable tag: 1.6.1.3
 Requires PHP: 7.4
 License: GNU General Public License v3.0
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
