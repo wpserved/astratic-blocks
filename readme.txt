@@ -3,7 +3,7 @@ Contributors: wpserved
 Donate link: https://wpserved.com/
 Tags: astratic, blocks, patterns, Gutenberg, Astratic
 Requires at least: 6.1
-Tested up to: 6.1.1
+Tested up to: 6.3
 Stable tag: 1.6.0
 Requires PHP: 7.4
 License: GNU General Public License v3.0
@@ -15,7 +15,7 @@ Add special custom blocks and patterns to the Gutenberg.
 
 = Do more with fewer tools. Boost your WordPress Editor experience. =
 
-Do more with fewer tools. Use Page Sections Mockups to create mockups right within the WordPress Block Editor. Design and implement websites within the standard WordPress editor: starting from mockups to designs, to implementation, to a successful launch. 
+Do more with fewer tools. Use Page Sections Mockups to create mockups right within the WordPress Block Editor. Design and implement websites within the standard WordPress editor: starting from mockups to designs, to implementation, to a successful launch.
 
 [Astratic Blocks plugin](https://astratic.com/plugin/?utm_source=wp_org&utm_medium=plugin_page&utm_campaign=astratic_blocks&utm_id=astratic_blocks) provides a library of patterns crafted with default Gutenberg blocks, with the addition of smart custom blocks to take make your website responsive, and a few other custom blocks so you don't need to write a single line of code.
 
@@ -33,7 +33,7 @@ In current version of the plugin you will find 21 well thought Page Sections moc
 - FAQ
 - Header Sections
 - Testimonials
-- Rich Content 
+- Rich Content
 - Blog / News
 - Team Sections
 - Gallery
@@ -93,7 +93,7 @@ This release implements a new version of patterns. Following patterns have been 
 * Testimonials Section: Centered mockup
 * Testimonials Section: Three Columns mockup
 New blocks are introduced:
-* Notice Block 
+* Notice Block
 * Copyright Block
 
 = 1.4.0 =
