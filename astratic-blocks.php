@@ -12,7 +12,7 @@
  * Requires PHP: 7.4
  */
 
-define('ASBL_VERSION', '1.6.1.3');
+define('ASBL_VERSION', '1.6.2');
 define('ASBL_ROOT_PATH', dirname(__FILE__));
 define('ASBL_ASSETS_PATH', dirname(__FILE__) . '/dist');
 define('ASBL_RESOURCES_PATH', dirname(__FILE__) . '/resources');
