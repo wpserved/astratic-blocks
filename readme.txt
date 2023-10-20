@@ -4,7 +4,7 @@ Donate link: https://wpserved.com/
 Tags: astratic, blocks, patterns, Gutenberg, Astratic
 Requires at least: 6.1
 Tested up to: 6.3
-Stable tag: 1.6.1.3
+Stable tag: 1.6.2
 Requires PHP: 7.4
 License: GNU General Public License v3.0
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
@@ -61,6 +61,9 @@ In current version of the plugin you will find 21 well thought Page Sections moc
 You can find plugin's source files on our GitHub repo [page](https://github.com/wpserved/astratic-blocks).
 
 == Changelog ==
+= 1.6.2 =
+* Split frontend and admin area scripts into separate files
+
 = 1.6.0 =
 * Changed the block "Astratic: Notice" behavior with 0 days option selected.
 
